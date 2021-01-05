@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.atguigu.starter:atguigu-spring-boot-starter-autoconfigurer:2.4.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/atguigu/starter/atguigu-spring-boot-starter-autoconfigurer/2.4.1/atguigu-spring-boot-starter-autoconfigurer-2.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/atguigu/starter/atguigu-spring-boot-starter-autoconfigurer/2.4.1/atguigu-spring-boot-starter-autoconfigurer-2.4.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/atguigu/starter/atguigu-spring-boot-starter-autoconfigurer/2.4.1/atguigu-spring-boot-starter-autoconfigurer-2.4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
