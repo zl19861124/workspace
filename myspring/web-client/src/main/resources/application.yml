@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: web-client
+    wsForAttrServicesWsdl: http://127.0.0.1:8080/ws/WsForAttrServices.wsdl
+    marshallerAttrContextPath: com.micro.bean.wsForAttr
+    wsForNodeServicesWsdl: http://127.0.0.1:8080/ws/WsForNodeServices.wsdl
+    marshallerNodeContextPath: com.micro.bean.wsForNode
+server:
+  port: 8081
+webdata
+   datas:
+     - path: d:/
+       files:
+         - filename: a.txt
+
+
+

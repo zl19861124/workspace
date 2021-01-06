@@ -1,0 +1,15 @@
+<ns3:wsForAttrServicesResponse xmlns:ns3="http://www.micro.com/ws/demo" topic="345">
+    <wsForAttrServices>
+        <username>Freud</username>
+        <gender>Male</gender>
+        <location>Dalian</location>
+        <list>
+            <rsSet>
+                <acc>1586697855309</acc>
+            </rsSet>
+            <rsSet>
+                <acc>1586697855309</acc>
+            </rsSet>
+        </list>
+    </wsForAttrServices>
+</ns3:wsForAttrServicesResponse>

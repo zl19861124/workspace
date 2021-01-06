@@ -1,0 +1,3 @@
+<demo:wsForAttrServicesRequest  xmlns:demo="http://www.micro.com/ws/demo">
+    <demo:userId>$!userid</demo:userId>
+</demo:wsForAttrServicesRequest>

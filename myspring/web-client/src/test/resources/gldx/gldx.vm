@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gb2312"?>
+<message dxlxid="$config.gldxlx" transsys="$transsys">
+  <dxdata>
+#foreach($po in $gldxPoList)
+    <row seqid="$!po.seqId" compid="$!po.xtdw" dxmc="$!po.dxmc" #foreach($prop in $config.properties) $prop.name="$!po.get($prop.name)"#end kz_1="#if($config.mappingConfig)$!config.mappingConfig.grisType#$!config.mappingConfig.thirdType#$!po.xtdw#$!po.thirdId#$!po.dxmc#end" kz_2="$!config.feedBackUrl#$!transsys#$!config.handlerFeedback" kz_3="$!po.ext1#$!po.ext2#$!po.ext3">
+#foreach($subtable in $config.subTables)
+#if($po.get($subtable.name).size()>0)
+      <zbdata zdname="$subtable.name" >
+#foreach($sub in $po.get($subtable.name))
+        <row childid="$foreach.count" #foreach($subprop in $subtable.properties) $subprop.name="$!sub.get($subprop.name)"#end></row>
+#end
+      </zbdata>
+#end
+#end
+     </row>
+#end
+   </dxdata>
+</message>

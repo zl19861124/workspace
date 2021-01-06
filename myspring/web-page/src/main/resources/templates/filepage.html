@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+
+<code class="language-java"><ul th:each="item,mobj: ${map}">
+    <!--<li   th:text="${mobj.index}+1" ></li>-->
+    <li   th:text="${mobj.current.key}" ></li>
+        <div th:each="arrayS:${mobj.current.value}">
+            <p>附件信息</p>
+            <a th:text="${arrayS}"  href="${arrayS}"></a>
+        </div>
+</ul></code>
+</body>
+</html>

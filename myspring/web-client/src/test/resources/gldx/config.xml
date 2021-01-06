@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="GBK"?>
+<config gldxlx="5069" description="单位" itemPath="item">
+	<mappingConfig>
+		<grisType>5069</grisType>
+		<thirdType>wldw</thirdType>
+	</mappingConfig>
+
+	<seqid join="-">
+		<id zdPath="id" />
+	</seqid>
+
+	<dxmc zdPath="name" />
+
+	<company zdPath="dw">
+		<mappingRuler>
+			<Mtype>PROFIT_CENTER</Mtype>
+			<Ftype>XTDW</Ftype>
+		</mappingRuler>
+	</company>
+
+	<property name="dxmc" zdPath="name" />
+
+	<property name="ZD5037" zdPath="address">
+		<mappingRuler>
+			<Mtype>jggc</Mtype>
+			<Ftype>5108</Ftype>
+		</mappingRuler>
+	</property>
+
+
+	<subTable name="XTGLDX5069ZD5047" subPath="sub/item">
+		<property name="ZD5006" zdPath="khyh">
+			<mappingRuler>
+				<Mtype>cgdd</Mtype>
+				<Ftype>8254</Ftype>
+			</mappingRuler>
+		</property>
+	</subTable>
+
+
+
+</config>

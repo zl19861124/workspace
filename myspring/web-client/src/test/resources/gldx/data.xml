@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gldx>
+	<item>
+		<id>123</id>
+		<name>信息集成部11</name>
+		<dw>123</dw>
+		<address>ccc</address>
+		<sub>
+			<item>
+				<khyh>1234</khyh>
+			</item>
+		</sub>
+	</item>
+</gldx>

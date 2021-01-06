@@ -1,0 +1,3 @@
+2020-04-11 16:18:41,098 INFO  [main] - 12313123 at com.micro.AppTest.shouldAnswerWithTrue(AppTest.java:25)
+2020-04-11 16:19:38,739 INFO  [main] - 12313123 at com.micro.AppTest.shouldAnswerWithTrue(AppTest.java:25)
+2020-04-11 16:22:25,729 INFO  [main] - 12313123 at com.micro.AppTest.shouldAnswerWithTrue(AppTest.java:25)

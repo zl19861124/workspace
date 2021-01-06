@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title th:text="${title}"></title>
+</head>
+<body>
+<h1 th:text="${content}"></h1>
+ <div>
+    <!-- <span th:text="${item.key}" th:each="item : ${navMap}"></span>
+     <p>containsKey : <span th:text="${#maps.containsKey(itdragonMap, 'thName')}"/></p>
+       <p>custom format : <span th:text="${#dates.format(itdragonDate, 'yyyy-MM-dd HH:mm:ss')}"/></p>
+        <div th:if="${not #lists.isEmpty(itdragonList)}">
+        <p>substring : <span th:text="${#strings.substring(itdragonStr, 2, 8)}"/></p>
+    -->
+     <table>
+         <tr>
+             <td th:if="${not #maps.isEmpty(navMap)}" th:each="item : ${navMap}">
+                 <a  th:unless="${#strings.contains(item.key, '#')}" th:text="${item.key}" th:href="${item.value}">  </a>
+             </td>
+         </tr>
+     </table>
+ </div>
+<table border="1">
+    <tr th:each="message ,stat: ${lst}">
+        <td th:text="|${stat.index},${stat.count}|"></td>    <td th:text="${message}"/>
+        <td th:switch="${stat.index}">
+             <div th:case="0" th:if="${stat.index} eq 0" th:text="首行"></div>
+             <div th:text="${stat.even}?'偶数行':'奇数行'" th:if="${stat.index} gt 0"> </div>
+            <div th:case="*" >
+            </div>
+        </td>
+
+    </tr>
+</table>
+</body>
+</html>
